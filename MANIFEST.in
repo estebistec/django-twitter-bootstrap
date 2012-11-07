@@ -1,0 +1,5 @@
+include setup.py
+include twitter_bootstrap/*.py
+include twitter_bootstrap/static/img/*.png
+include twitter_bootstrap/static/js/bootstrap-*.js
+include twitter_bootstrap/static/less/*.less
