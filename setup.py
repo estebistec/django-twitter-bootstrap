@@ -20,7 +20,6 @@ setup(
     author="Steven Cummings",
     author_email="cummingscs@gmail.com",
     description="Provides a Django app whose static folder contains Twitter Bootstrap assets",
-    long_description=open('README.md').read(),
     license="MIT",
     keywords="django app staticfiles twitter bootstrap",
     url="https://github.com/estebistec/django-twitter-bootstrap",
