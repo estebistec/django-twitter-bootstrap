@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-twitter-bootstrap",
-    version="2.2.2",
+    version="2.2.2-1",
     packages=find_packages(),
     package_data={
         'twitter_bootstrap': [
