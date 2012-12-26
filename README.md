@@ -181,3 +181,25 @@ for pipeline to use when processing those styles.
 ```
 
 That's it. Enjoy!
+
+## Available versions
+
+As stated above in the goals, versions of this package should match versions of
+Bootstrap, where available. This presents something of a problem if and when we
+need to make updates to the *packaging* here. We can't just upgrade any of the
+three common components of semantic versioning, because those map to versions
+of Bootstrap. So, we'll use revisions when needed.
+
+E.g., suppose we have django-twitter-bootstrap 2.2.2 which packages Twitter
+Bootstrap 2.2.2. If we need to enhance or fix the packaging, we release it as
+revised version 2.2.2-1.
+
+Therefore, if you're getting a packaging for the first time you could specify
+it as a very tight range of that target version or no less than the next patch
+level version. E.g., target 2.2.2 with `>=2.2.2,<2.2.3`, or `>=2,<2.0.1`.
+Each of these captures all revisions to packagings targetting a specific
+version of Bootstrap.
+
+Finally, it should be re-iterated that the need for this should be the
+exception and versions should generally mirror Bootstrap more directly going
+forward.
