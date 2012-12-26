@@ -1,3 +1,7 @@
+include AUTHORS
+include LICENSE
+include PLAN
+include *.md
 include setup.py
 include twitter_bootstrap/*.py
 include twitter_bootstrap/static/img/*.png

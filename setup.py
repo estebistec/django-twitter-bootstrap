@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 
 
+import os
+
 from setuptools import setup, find_packages
+
+
+README_PATH = os.path.join(os.path.dirname(__file__), 'README.md')
 
 
 setup(
@@ -20,6 +25,7 @@ setup(
     author="Steven Cummings",
     author_email="cummingscs@gmail.com",
     description="Provides a Django app whose static folder contains Twitter Bootstrap assets",
+    long_description=open(README_PATH).read(),
     license="MIT",
     keywords="django app staticfiles twitter bootstrap",
     url="https://github.com/estebistec/django-twitter-bootstrap",
