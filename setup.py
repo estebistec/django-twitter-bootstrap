@@ -11,7 +11,7 @@ README_PATH = os.path.join(os.path.dirname(__file__), 'README.md')
 
 setup(
     name="django-twitter-bootstrap",
-    version="2.2.2-1",
+    version="2.3.0",
     packages=find_packages(),
     package_data={
         'twitter_bootstrap': [

@@ -3,7 +3,7 @@
 This package provides a [Django](https://www.djangoproject.com) app whose
 static folder contains the sources of
 [Twitter Bootstrap](http://twitter.github.com/bootstrap), nothing more and
-nothing less. The un-minified [LESS](http://lesscss.org) and JavaScript sources
+nothing less. The un-minified [LESS](http://lesscss.org) and javascript sources
 are included to be integrated into your Django site as you see fit. If you
 simply want to use the minified CSS and JS files provided by the Bootstrap
 project, you probably don't need this anyway.
@@ -33,7 +33,7 @@ A sample working project can be found
 First, install the app:
 
 ```bash
-pip install "django-twitter-bootstrap>=2.2.2,<2.2.3" # Target boostrap 2.2.2
+pip install "django-twitter-bootstrap>=2.3,<2.3.1" # Target boostrap 2.3
 ```
 
 Then include it in your Django project.
@@ -106,15 +106,16 @@ your site templates.
 ...
 ```
 
-## Usage with an asset managemer pipeline
+## Usage with an asset pipeline
 
 Of course I recommend you not go plain, and instead use an asset manager that
 helps with the filtering, concatenating, minification, and other processing of
 your static assets. One such manager is
 [django-pipeline](https://github.com/cyberdelia/django-pipeline).
 
-Follow the setup instructions for django-pipeline, define asset groups which
-provide Twitter Bootstrap, and then include them in your templates.
+ * Follow the setup instructions for django-pipeline
+ * Define asset groups which provide Twitter Bootstrap
+ * Use asset groups in your templates.
 
 ```python
 # settings.py
@@ -161,7 +162,7 @@ PIPELINE_JS = {
 
 Of course you need to
 [set up a LESS compiler](http://django-pipeline.readthedocs.org/en/latest/compilers.html#less-compiler)
-for pipeline to use when processing those styles.
+for pipeline to use when processing the styles.
 
 ```html
 ...
@@ -182,7 +183,7 @@ for pipeline to use when processing those styles.
 
 That's it. Enjoy!
 
-## Available versions
+## Version ranges matching bootstrap versions
 
 As stated above in the goals, versions of this package should match versions of
 Bootstrap, where available. This presents something of a problem if and when we
