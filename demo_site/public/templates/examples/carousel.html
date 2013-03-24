@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    {% include '_header_staticfiles.html' %}
 
     <!-- Le styles -->
+    {% include '_header_staticfiles.html' %}
     <style>
 
     /* GLOBAL STYLES
@@ -68,7 +68,7 @@
 
 
 
-    /* CUSTOMIZE THE NAVBAR
+    /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
     /* Carousel base class */
@@ -78,7 +78,7 @@
 
     .carousel .container {
       position: relative;
-      z-index: 10;
+      z-index: 9;
     }
 
     .carousel-control {
@@ -88,6 +88,7 @@
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
       background-color: transparent;
       border: 0;
+      z-index: 10;
     }
 
     .carousel .item {
@@ -266,11 +267,11 @@
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </a>
+            </button>
             <a class="brand" href="#">Project name</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
@@ -405,10 +406,13 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2012 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
+
+
+
     {% include 'examples/_footer_staticfiles.html' %}
     <script>
       !function ($) {
@@ -418,5 +422,6 @@
         })
       }(window.jQuery)
     </script>
+    <script src="{% static 'js/holder/holder.js' %}"></script>
   </body>
 </html>

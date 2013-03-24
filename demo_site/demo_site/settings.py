@@ -74,11 +74,15 @@ LOGGING = {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
     },
     'loggers': {
         'django.request': {
-            'handlers': ['mail_admins'],
+            'handlers': ['console'],
             'level': 'ERROR',
             'propagate': True,
         },
@@ -150,9 +154,6 @@ STATICFILES_FINDERS = (
 
 STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
 
-PIPELINE_CSS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
-PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
-
 PIPELINE_COMPILERS = (
     'pipeline.compilers.less.LessCompiler',
 )
@@ -191,8 +192,8 @@ PIPELINE_JS = {
     },
     'application': {
         'source_filenames': (
-          'js/application.js',
           'js/holder/holder.js',
+          'js/application.js',
         ),
         'output_filename': 'js/a.js',
     }
