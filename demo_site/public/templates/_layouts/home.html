@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include '_includes/header.html' %}
+    <!-- Place anything custom after this. -->
+  </head>
+  <body class="bs-docs-home">
+
+    <!-- Docs master nav -->
+    {% include '_includes/nav-main.html' %}
+
+    <!-- Page content of course! -->
+    {% block content %}{% endblock %}
+
+    <!-- Callout for the old docs link -->
+    {% include '_includes/old-bs-docs.html' %}
+
+    <div class="container">
+      {% include '_includes/social-buttons.html' %}
+
+      <ul class="bs-masthead-links">
+        <li>
+          <a href="{{ site.repo }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
+        </li>
+        <li>
+          <a href="{{ site.examples }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
+        </li>
+        <li>
+          <a href="{{ site.glyphicons }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Glyphicons']);">Glyphicons</a>
+        </li>
+        <li>
+          <a href="{{ site.expo }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- JS and analytics only. -->
+    {% include '_includes/footer.html' %}
+
+  </body>
+</html>
