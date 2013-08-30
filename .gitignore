@@ -3,3 +3,4 @@ dist
 *.egg-info
 demo_site/nginx.conf
 demo_site/static_root
+build

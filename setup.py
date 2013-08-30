@@ -6,12 +6,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-twitter-bootstrap",
-    version="2.3.2",
+    version="3.0.0-rc1",
     packages=find_packages(),
     package_data={
         'twitter_bootstrap': [
-            'static/img/*.png',
-            'static/js/bootstrap-*.js',
+            'static/js/*.js',
             'static/less/*.less',
         ],
     },
