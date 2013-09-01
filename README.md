@@ -33,7 +33,7 @@ A sample working project can be found
 First, install the app:
 
 ```bash
-pip install django-twitter-bootstrap==2.3.2
+pip install django-twitter-bootstrap==3.0.0-rc1
 ```
 
 Then include it in your Django project.
@@ -59,7 +59,6 @@ Of course what's provided is just Bootstrap, but more specifically...
 ### LESS
 
  * `less/bootstrap.less`
- * `less/responsive.less`
 
 Also included are lots of other LESS files included by the above that aren't
 worth listing out. The above two files are the common entry points for usage of
@@ -72,19 +71,18 @@ that you may or may not want to include in your site. These files are
 typically hand-picked based on the needs of your site. Please check the
 Bootstrap documentation for info on which of these modules depends on others.
 
- * `js/bootstrap-transition.js`
- * `js/bootstrap-alert.js`
- * `js/bootstrap-modal.js`
- * `js/bootstrap-dropdown.js`
- * `js/bootstrap-scrollspy.js`
- * `js/bootstrap-tab.js`
- * `js/bootstrap-tooltip.js`
- * `js/bootstrap-popover.js`
- * `js/bootstrap-button.js`
- * `js/bootstrap-collapse.js`
- * `js/bootstrap-carousel.js`
- * `js/bootstrap-typeahead.js`
- * `js/bootstrap-affix.js`
+ * `js/transition.js`
+ * `js/modal.js`
+ * `js/dropdown.js`
+ * `js/scrollspy.js`
+ * `js/tab.js`
+ * `js/tooltip.js`
+ * `js/popover.js`
+ * `js/alert.js`
+ * `js/button.js`
+ * `js/collapse.js`
+ * `js/carousel.js`
+ * `js/affix.js`
 
 ### Images
 
@@ -125,7 +123,6 @@ PIPELINE_CSS = {
     'bootstrap': {
         'source_filenames': (
             'less/bootstrap.less',
-            'less/responsive.less'
         ),
         'output_filename': 'css/b.css',
         'extra_context': {
@@ -139,19 +136,18 @@ PIPELINE_JS = {
     ...
     'bootstrap': {
         'source_filenames': (
-          'js/bootstrap-transition.js',
-          'js/bootstrap-alert.js',
-          'js/bootstrap-modal.js',
-          'js/bootstrap-dropdown.js',
-          'js/bootstrap-scrollspy.js',
-          'js/bootstrap-tab.js',
-          'js/bootstrap-tooltip.js',
-          'js/bootstrap-popover.js',
-          'js/bootstrap-button.js',
-          'js/bootstrap-collapse.js',
-          'js/bootstrap-carousel.js',
-          'js/bootstrap-typeahead.js',
-          'js/bootstrap-affix.js',
+          'js/transition.js',
+          'js/modal.js',
+          'js/dropdown.js',
+          'js/scrollspy.js',
+          'js/tab.js',
+          'js/tooltip.js',
+          'js/popover.js',
+          'js/alert.js',
+          'js/button.js',
+          'js/collapse.js',
+          'js/carousel.js',
+          'js/affix.js',
         ),
         'output_filename': 'js/b.js',
     },
