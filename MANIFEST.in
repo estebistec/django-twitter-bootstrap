@@ -4,5 +4,6 @@ include PLAN
 include *.md
 include setup.py
 include twitter_bootstrap/*.py
+include twitter_bootstrap/static/fonts/glyphicons-halflings-regular.*
 include twitter_bootstrap/static/js/*.js
 include twitter_bootstrap/static/less/*.less

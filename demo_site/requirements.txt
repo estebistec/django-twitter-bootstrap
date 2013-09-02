@@ -1,5 +1,5 @@
 Django==1.5.2
 PyYAML==3.10
 django-pipeline==1.3.14
-django-twitter-bootstrap==3.0.0-rc2
+django-twitter-bootstrap==3.0.0
 futures==2.1.4

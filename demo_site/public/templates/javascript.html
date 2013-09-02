@@ -11,7 +11,7 @@
     </div>
 
     <h3 id="js-individual-compiled">Individual or compiled</h3>
-    <p>Plugins can be included individually (using Bootstrap's individual <code>*.js</code> files, or all at once (using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code>.</p>
+    <p>Plugins can be included individually (using Bootstrap's individual <code>*.js</code> files), or all at once (using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code>).</p>
 
     <div class="bs-callout bs-callout-danger">
       <h4>Do not attempt to include both.</h4>
@@ -236,7 +236,7 @@ $('#myModal').on('show.bs.modal', function (e) {
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -276,7 +276,7 @@ $('#myModal').on('show.bs.modal', function (e) {
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 
     <h3>Methods</h3>
 
@@ -302,7 +302,7 @@ $('#myModal').modal({
 
     <h3>Events</h3>
     <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -329,7 +329,7 @@ $('#myModal').modal({
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 {% highlight js %}
 $('#myModal').on('hidden.bs.modal', function () {
   // do something…
@@ -351,52 +351,52 @@ $('#myModal').on('hidden.bs.modal', function () {
 
     <h3>Within a navbar</h3>
     <div class="bs-example">
-      <nav id="navbar-example" class="navbar navbar-static" role="navigation">
-        <div class="container" style="width: auto;">
-          <a class="navbar-brand" href="#">Project Name</a>
+      <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+        <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="nav-collapse collapse bs-js-navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav pull-right">
-              <li id="fat-menu" class="dropdown">
-                <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
+          <a class="navbar-brand" href="#">Project Name</a>
+        </div>
+        <div class="collapse navbar-collapse bs-js-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.nav-collapse -->
       </nav> <!-- /navbar-example -->
     </div> <!-- /example -->
 
@@ -476,7 +476,7 @@ $('.dropdown-toggle').dropdown()
     <p>Toggles the dropdown menu of a given navbar or tabbed navigation.</p>
 
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
@@ -503,7 +503,7 @@ $('.dropdown-toggle').dropdown()
           </tr>
         </tbody>
       </table>
-    </div><!-- ./bs-table-scrollable -->
+    </div><!-- ./bs-table-responsive -->
 {% highlight js %}
 $('#myDropdown').on('show.bs.dropdown', function () {
   // do something…
@@ -522,19 +522,27 @@ $('#myDropdown').on('show.bs.dropdown', function () {
     <h2 id="scrollspy-examples">Example in navbar</h2>
     <p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
     <div class="bs-example">
-      <nav id="navbar-example2" class="navbar navbar-static" role="navigation">
-        <div class="container" style="width: auto;">
+      <nav id="navbar-example2" class="navbar navbar-default navbar-static" role="navigation">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Project Name</a>
+        </div>
+        <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
           <ul class="nav navbar-nav">
             <li><a href="#fat">@fat</a></li>
             <li><a href="#mdo">@mdo</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#one">one</a></li>
-                <li><a href="#two">two</a></li>
+              <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
+                <li><a href="#one" tabindex="-1">one</a></li>
+                <li><a href="#two" tabindex="-1">two</a></li>
                 <li class="divider"></li>
-                <li><a href="#three">three</a></li>
+                <li><a href="#three" tabindex="-1">three</a></li>
               </ul>
             </li>
           </ul>
@@ -584,13 +592,13 @@ $('body').scrollspy({ target: '#navbar-example' })
 {% highlight js %}
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
-});
+})
 {% endhighlight %}
 
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -609,10 +617,10 @@ $('[data-spy="scroll"]').each(function () {
          </tr>
         </tbody>
       </table>
-    </div><!-- ./bs-table-scrollable -->
+    </div><!-- ./bs-table-responsive -->
 
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -627,7 +635,7 @@ $('[data-spy="scroll"]').each(function () {
         </tr>
         </tbody>
       </table>
-    </div><!-- ./bs-table-scrollable -->
+    </div><!-- ./bs-table-responsive -->
 {% highlight js %}
 $('#myScrollspy').on('activate.bs.scrollspy', function () {
   // do something…
@@ -651,10 +659,10 @@ $('#myScrollspy').on('activate.bs.scrollspy', function () {
         <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
         <li><a href="#profile" data-toggle="tab">Profile</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
-            <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+          <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">@fat</a></li>
+            <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@mdo</a></li>
           </ul>
         </li>
       </ul>
@@ -679,17 +687,17 @@ $('#myScrollspy').on('activate.bs.scrollspy', function () {
     <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 {% highlight js %}
 $('#myTab a').click(function (e) {
-  e.preventDefault();
-  $(this).tab('show');
+  e.preventDefault()
+  $(this).tab('show')
 })
 {% endhighlight %}
 
           <p>You can activate individual tabs in several ways:</p>
 {% highlight js %}
-$('#myTab a[href="#profile"]').tab('show'); // Select tab by name
-$('#myTab a:first').tab('show'); // Select first tab
-$('#myTab a:last').tab('show'); // Select last tab
-$('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
+$('#myTab a[href="#profile"]').tab('show') // Select tab by name
+$('#myTab a:first').tab('show') // Select first tab
+$('#myTab a:last').tab('show') // Select last tab
+$('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
 {% endhighlight %}
 
     <h3>Markup</h3>
@@ -727,13 +735,13 @@ $('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
 
 <script>
   $(function () {
-    $('#myTab a:last').tab('show');
+    $('#myTab a:last').tab('show')
   })
 </script>
 {% endhighlight %}
 
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -752,7 +760,7 @@ $('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 {% highlight js %}
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   e.target // activated tab
@@ -802,7 +810,7 @@ $('#example').tooltip(options)
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -869,7 +877,7 @@ $('#example').tooltip(options)
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
     <div class="bs-callout bs-callout-info">
       <h4>Data attributes for individual tooltips</h4>
       <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
@@ -902,7 +910,7 @@ $('#example').tooltip(options)
     {% highlight js %}$('#element').tooltip('destroy'){% endhighlight %}
 
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -929,10 +937,10 @@ $('#example').tooltip(options)
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 {% highlight js %}
 $('#myTooltip').on('hidden.bs.tooltip', function () {
-// do something…
+  // do something…
 })
 {% endhighlight %}
   </div>
@@ -1024,7 +1032,7 @@ $('#myTooltip').on('hidden.bs.tooltip', function () {
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
@@ -1092,12 +1100,12 @@ $('#myTooltip').on('hidden.bs.tooltip', function () {
             <td>string | false</td>
             <td>false</td>
             <td>
-             <p>Appends the popover to a specific element. Example: <code>container: 'body'</code></p>
+             <p>Appends the popover to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</p>
             </td>
           </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
     <div class="bs-callout bs-callout-info">
       <h4>Data attributes for individual popovers</h4>
       <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
@@ -1126,7 +1134,7 @@ $('#myTooltip').on('hidden.bs.tooltip', function () {
     <p>Hides and destroys an element's popover.</p>
     {% highlight js %}$('#element').popover('destroy'){% endhighlight %}
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1153,7 +1161,7 @@ $('#myTooltip').on('hidden.bs.tooltip', function () {
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 {% highlight js %}
 $('#myPopover').on('hidden.bs.popover', function () {
   // do something…
@@ -1172,7 +1180,7 @@ $('#myPopover').on('hidden.bs.popover', function () {
     <h2 id="alerts-examples">Example alerts</h2>
     <p>Add dismiss functionality to all alert messages with this plugin.</p>
     <div class="bs-example">
-      <div class="alert fade in">
+      <div class="alert alert-warning fade in">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
       </div>
@@ -1210,7 +1218,7 @@ $('#myPopover').on('hidden.bs.popover', function () {
 
     <h3>Events</h3>
     <p>Bootstrap's alert class exposes a few events for hooking into alert functionality.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
@@ -1229,7 +1237,7 @@ $('#myPopover').on('hidden.bs.popover', function () {
           </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 {% highlight js %}
 $('#my-alert').bind('closed.bs.alert', function () {
   // do something…
@@ -1401,13 +1409,13 @@ $('.nav-tabs').button()
 
     <div class="bs-example">
       <div class="panel-group" id="accordion">
-        <div class="panel">
+        <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
+            <h4 class="panel-title">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 Collapsible Group Item #1
               </a>
-            </h3>
+            </h4>
           </div>
           <div id="collapseOne" class="panel-collapse collapse in">
             <div class="panel-body">
@@ -1415,13 +1423,13 @@ $('.nav-tabs').button()
             </div>
           </div>
         </div>
-        <div class="panel">
+        <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
+            <h4 class="panel-title">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                 Collapsible Group Item #2
               </a>
-            </h3>
+            </h4>
           </div>
           <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body">
@@ -1429,13 +1437,13 @@ $('.nav-tabs').button()
             </div>
           </div>
         </div>
-        <div class="panel">
+        <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
+            <h4 class="panel-title">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                 Collapsible Group Item #3
               </a>
-            </h3>
+            </h4>
           </div>
           <div id="collapseThree" class="panel-collapse collapse">
             <div class="panel-body">
@@ -1447,13 +1455,13 @@ $('.nav-tabs').button()
     </div><!-- /example -->
 {% highlight html %}
 <div class="panel-group" id="accordion">
-  <div class="panel">
+  <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title">
+      <h4 class="panel-title">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
           Collapsible Group Item #1
         </a>
-      </h3>
+      </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
@@ -1461,13 +1469,13 @@ $('.nav-tabs').button()
       </div>
     </div>
   </div>
-  <div class="panel">
+  <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title">
+      <h4 class="panel-title">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
           Collapsible Group Item #2
         </a>
-      </h3>
+      </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
@@ -1475,13 +1483,13 @@ $('.nav-tabs').button()
       </div>
     </div>
   </div>
-  <div class="panel">
+  <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title">
+      <h4 class="panel-title">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
           Collapsible Group Item #3
         </a>
-      </h3>
+      </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
@@ -1516,7 +1524,7 @@ $(".collapse").collapse()
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-parent=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1541,7 +1549,7 @@ $(".collapse").collapse()
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 
     <h3>Methods</h3>
 
@@ -1564,7 +1572,7 @@ $('#myCollapsible').collapse({
 
     <h3>Events</h3>
     <p>Bootstrap's collapse class exposes a few events for hooking into collapse functionality.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1593,7 +1601,7 @@ $('#myCollapsible').collapse({
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 {% highlight js %}
 $('#myCollapsible').on('hidden.bs.collapse', function () {
   // do something…
@@ -1621,13 +1629,13 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
         </ol>
         <div class="carousel-inner">
           <div class="item active">
-            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#777:#555/text:First slide" alt="First slide">
+            <img src="data:image/png;base64,"  data-src="{% static 'js/holder.js' %}/900x500/auto/#777:#555/text:First slide" alt="First slide">
           </div>
           <div class="item">
-            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+            <img src="data:image/png;base64,"  data-src="{% static 'js/holder.js' %}/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
           </div>
           <div class="item">
-            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
+            <img src="data:image/png;base64,"  data-src="{% static 'js/holder.js' %}/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
           </div>
         </div>
         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -1650,7 +1658,7 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="..." alt="">
+      <img src="..." alt="...">
       <div class="carousel-caption">
         ...
       </div>
@@ -1669,7 +1677,7 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
 {% endhighlight %}
 <div class="bs-callout bs-callout-info">
   <h4>Glyphicon Alternative</h4>
-  <p>With <a href="{{ site.glyphicons }}">Glyphicons</a> available, you may choose to style the left and right toggle buttons with <code>.glyphicon .glyphicon-chevron-left</code> and <code>.glyphicon .glyphicon-chevron-right</code>.</p>
+  <p>With <a href="{{ page.base_url }}components/#glyphicons">Glyphicons</a> available, you may choose to style the left and right toggle buttons with <code>.glyphicon .glyphicon-chevron-left</code> and <code>.glyphicon .glyphicon-chevron-right</code>.</p>
 </div>
 
     <h3>Optional captions</h3>
@@ -1683,21 +1691,21 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
         </ol>
         <div class="carousel-inner">
           <div class="item active">
-            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#777:#777" alt="First slide image">
+            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#777:#777" src="data:image/png;base64," alt="First slide image">
             <div class="carousel-caption">
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
           <div class="item">
-            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#666:#666" alt="Second slide image">
+            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#666:#666" src="data:image/png;base64," alt="Second slide image">
             <div class="carousel-caption">
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="item">
-            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#555:#5555" alt="Third slide image">
+            <img data-src="{% static 'js/holder.js' %}/900x500/auto/#555:#5555" src="data:image/png;base64," alt="Third slide image">
             <div class="carousel-caption">
               <h3>Third slide label</h3>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -1714,7 +1722,7 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
     </div><!-- /example -->
 {% highlight html %}
 <div class="item active">
-  <img src="..." alt="">
+  <img src="..." alt="...">
   <div class="carousel-caption">
     <h3>...</h3>
     <p>...</p>
@@ -1740,7 +1748,7 @@ $('.carousel').carousel()
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1771,7 +1779,7 @@ $('.carousel').carousel()
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 
     <h3>Methods</h3>
 
@@ -1801,7 +1809,7 @@ $('.carousel').carousel({
 
     <h3>Events</h3>
     <p>Bootstrap's carousel class exposes two events for hooking into carousel functionality.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1820,7 +1828,7 @@ $('.carousel').carousel({
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 {% highlight js %}
 $('#myCarousel').on('slide.bs.carousel', function () {
   // do something…
@@ -1876,7 +1884,7 @@ $('#myCarousel').on('slide.bs.carousel', function () {
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset-top="200"</code>.</p>
 
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1891,11 +1899,11 @@ $('#myCarousel').on('slide.bs.carousel', function () {
            <td>offset</td>
            <td>number | function | object</td>
            <td>10</td>
-           <td>Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and left directions. To provide a unique, bottom and top offset just provide an object <code>offset: { top: 10 }</code> or <code>offset: { top: 10, bottom: 5 }</code>. Use a function when you need to dynamically calculate an offset.</td>
+           <td>Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and bottom directions. To provide a unique, bottom and top offset just provide an object <code>offset: { top: 10 }</code> or <code>offset: { top: 10, bottom: 5 }</code>. Use a function when you need to dynamically calculate an offset.</td>
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 
   </div>
 {% endblock %}
