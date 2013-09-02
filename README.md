@@ -33,7 +33,7 @@ A sample working project can be found
 First, install the app:
 
 ```bash
-pip install django-twitter-bootstrap==3.0.0-rc2
+pip install django-twitter-bootstrap==3.0.0
 ```
 
 Then include it in your Django project.
@@ -84,14 +84,6 @@ Bootstrap documentation for info on which of these modules depends on others.
  * `js/carousel.js`
  * `js/affix.js`
 
-### Images
-
-Icons by Glyphicons. Include both of these files if you expect to use any
-Bootstrap-packaged icons.
-
- * `img/glyphicons-halflings-white.png`
- * `img/glyphicons-halflings.png`
-
 ## Plain Usage
 
 If you're not using an asset manager, you can just include them as usual in
@@ -100,7 +92,7 @@ your site templates.
 ```html
 {% load staticfiles %}
 ...
-<script type="text/javascript" src="{% static 'js/bootstrap-transition.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/transition.js' %}"></script>
 ...
 ```
 

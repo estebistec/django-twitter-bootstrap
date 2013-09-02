@@ -6,10 +6,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-twitter-bootstrap",
-    version="3.0.0-rc2",
+    version="3.0.0",
     packages=find_packages(),
     package_data={
         'twitter_bootstrap': [
+            'static/fonts/glyphicons-halflings-regular.*',
             'static/js/*.js',
             'static/less/*.less',
         ],
