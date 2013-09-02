@@ -6,6 +6,7 @@
     <!-- Place anything custom after this. -->
   </head>
   <body class="bs-docs-home">
+    <a class="sr-only" href="#content">Skip navigation</a>
 
     <!-- Docs master nav -->
     {% include '_includes/nav-main.html' %}
@@ -16,7 +17,7 @@
     <!-- Callout for the old docs link -->
     {% include '_includes/old-bs-docs.html' %}
 
-    <div class="container">
+    <footer class="container" role="contentinfo">
       {% include '_includes/social-buttons.html' %}
 
       <ul class="bs-masthead-links">
@@ -33,7 +34,7 @@
           <a href="{{ site.expo }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
         </li>
       </ul>
-    </div>
+    </footer>
 
     <!-- JS and analytics only. -->
     {% include '_includes/footer.html' %}

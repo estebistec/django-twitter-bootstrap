@@ -8,13 +8,20 @@
 <script type="text/javascript" src="{% static 'js/widgets.js' %}"></script>
 {% compressed_js 'application' %}
 
+{% if page.slug == "customize" %}
+<script src="{% static 'js/less.js' %}"></script>
+<script src="{% static 'js/jszip.js' %}"></script>
+<script src="{% static 'js/uglify.js' %}"></script>
+<script src="{% static 'js/jquery.bbq.min.js' %}"></script>
+<script src="{% static 'js/customizer.js' %}"></script>
+{% endif %}
+
 <!-- Analytics
 ================================================== -->
 <script>
   var _gauges = _gauges || [];
   (function() {
     var t   = document.createElement('script');
-    t.type  = 'text/javascript';
     t.async = true;
     t.id    = 'gauges-tracker';
     t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
