@@ -33,7 +33,7 @@ A sample working project can be found
 First, install the app:
 
 ```bash
-pip install django-twitter-bootstrap==3.0.0-rc1
+pip install django-twitter-bootstrap==3.0.0-rc2
 ```
 
 Then include it in your Django project.
