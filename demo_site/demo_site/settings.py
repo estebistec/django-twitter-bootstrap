@@ -143,7 +143,7 @@ PIPELINE_COMPILERS = (
 PIPELINE_CSS = {
     'bootstrap': {
         'source_filenames': (
-            'less/bootstrap.less',
+            'twitter_bootstrap/less/bootstrap.less',
         ),
         'output_filename': 'css/b.css',
         'extra_context': {
@@ -155,18 +155,18 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'bootstrap': {
         'source_filenames': (
-          'js/transition.js',
-          'js/modal.js',
-          'js/dropdown.js',
-          'js/scrollspy.js',
-          'js/tab.js',
-          'js/tooltip.js',
-          'js/popover.js',
-          'js/alert.js',
-          'js/button.js',
-          'js/collapse.js',
-          'js/carousel.js',
-          'js/affix.js',
+          'twitter_bootstrap/js/transition.js',
+          'twitter_bootstrap/js/modal.js',
+          'twitter_bootstrap/js/dropdown.js',
+          'twitter_bootstrap/js/scrollspy.js',
+          'twitter_bootstrap/js/tab.js',
+          'twitter_bootstrap/js/tooltip.js',
+          'twitter_bootstrap/js/popover.js',
+          'twitter_bootstrap/js/alert.js',
+          'twitter_bootstrap/js/button.js',
+          'twitter_bootstrap/js/collapse.js',
+          'twitter_bootstrap/js/carousel.js',
+          'twitter_bootstrap/js/affix.js',
         ),
         'output_filename': 'js/b.js',
     },

@@ -71,9 +71,18 @@ class JavaScriptPageView(PageView):
     page_nav = u'_includes/nav-javascript.html'
 
 
+class AboutPageView(PageView):
+    template_name = u"about.html"
+    page_slug = u"about"
+    page_title = u"About"
+    page_lead = u"Learn about the history of Bootstrap, meet the core team, and check out the ever-growing community resources."
+    page_nav = u'_includes/nav-about.html'
+
+
 home = HomePageView.as_view()
 components = ComponentsPageView.as_view()
 css = CSSPageView.as_view()
 customize = CustomizePageView.as_view()
 getting_started = GettingStartedPageView.as_view()
 javascript = JavaScriptPageView.as_view()
+about = AboutPageView.as_view()

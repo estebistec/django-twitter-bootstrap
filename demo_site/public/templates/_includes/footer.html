@@ -2,10 +2,11 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{% static 'js/jquery.js' %}"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 {% compressed_js 'bootstrap' %}
 
-<script type="text/javascript" src="{% static 'js/widgets.js' %}"></script>
+<script src="http://platform.twitter.com/widgets.js"></script>
+{#<script type="text/javascript" src="{% static 'js/widgets.js' %}"></script>#}
 {% compressed_js 'application' %}
 
 {% if page.slug == "customize" %}
