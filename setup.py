@@ -11,8 +11,8 @@ setup(
     package_data={
         'twitter_bootstrap': [
             'static/fonts/glyphicons-halflings-regular.*',
-            'static/js/*.js',
-            'static/less/*.less',
+            'static/twitter_bootstrap/js/*.js',
+            'static/twitter_bootstrap/less/*.less',
         ],
     },
 
