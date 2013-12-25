@@ -2,8 +2,9 @@ include AUTHORS
 include LICENSE
 include PLAN
 include *.md
+include *.rst
 include setup.py
 include twitter_bootstrap/*.py
-include twitter_bootstrap/static/fonts/glyphicons-halflings-regular.*
-include twitter_bootstrap/static/js/*.js
-include twitter_bootstrap/static/less/*.less
+include twitter_bootstrap/static/twitter_bootstrap/fonts/glyphicons-halflings-regular.*
+include twitter_bootstrap/static/twitter_bootstrap/js/*.js
+include twitter_bootstrap/static/twitter_bootstrap/less/*.less
