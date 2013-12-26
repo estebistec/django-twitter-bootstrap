@@ -10,7 +10,7 @@ Overview
 ========
 
 This package provides a `Django <https://www.djangoproject.com>`_ app whose static folder contains
-the sources of `Twitter Bootstrap <http://twitter.github.com/bootstrap>`_, nothing more and nothing
+the sources of `Twitter Bootstrap <http://getbootstrap.com>`_, nothing more and nothing
 less. The un-minified `LESS <http://lesscss.org>`_ and javascript sources are included to be
 integrated into your Django site as you see fit. If you simply want to use the minified CSS and JS
 files provided by the Bootstrap project, you probably don't need this anyway.
