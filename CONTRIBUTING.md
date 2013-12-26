@@ -32,9 +32,10 @@ git submodule update --init
 Then, when you want to update to a different release of Bootstrap:
 
 ```bash
-cd twitter_bootstrap/static
-git checkout v2.2.3 # Or other commit, preferably a release tag
-cd ../..
-git add twitter_bootstrap/static
-git commit -m "Upgrade Twitter Bootstrap to v2.2.3"
+cd twitter_bootstrap/static/twitter_bootstrap
+git tag  # See a list of tags
+git checkout v3.0.4  # Or some other release tag
+cd ../../..
+git add twitter_bootstrap/static/twitter_bootstrap
+git commit -m "Upgrade Twitter Bootstrap to v3.0.4"
 ```
