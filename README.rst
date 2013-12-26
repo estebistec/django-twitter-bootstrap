@@ -1,3 +1,11 @@
+.. image:: https://pypip.in/v/django-twitter-bootstrap/badge.png
+    :target: https://pypi.python.org/pypi/django-twitter-bootstrap/
+    :alt: Latest Version
+
+.. image:: https://pypip.in/d/django-twitter-bootstrap/badge.png
+    :target: https://pypi.python.org/pypi/django-twitter-bootstrap/
+    :alt: Downloads
+
 Overview
 ========
 
