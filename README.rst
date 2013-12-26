@@ -35,7 +35,7 @@ A sample working project can be found
 
 First, install the app::
 
-    pip install django-twitter-bootstrap==3.0.1
+    pip install django-twitter-bootstrap==3.0.2
 
 Then include it in your Django project::
 
