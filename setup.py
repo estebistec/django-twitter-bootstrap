@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     package_data={
         'twitter_bootstrap': [
-            'static/fonts/glyphicons-halflings-regular.*',
+            'static/twitter_bootstrap/fonts/glyphicons-halflings-regular.*',
             'static/twitter_bootstrap/js/*.js',
             'static/twitter_bootstrap/less/*.less',
         ],
