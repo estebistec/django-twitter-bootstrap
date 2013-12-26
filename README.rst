@@ -58,7 +58,7 @@ Of course what's provided is just Bootstrap, but more specifically...
 glyphicons
 ----------
 
-This don't need to be specified or configured in your project, but they are included all the
+These don't need to be specified or configured in your project, but they are included all the
 same.
 
 - ``twitter_bootstrap/fonts/glyphicons-halflings-regular.eot``
