@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     url(r'^getting-started/$', views.getting_started, name=u"getting-started"),
     url(r'^javascript/$', views.javascript, name=u"javascript"),
     url(r'^about/$', views.about, name=u"about"),
+    url(r'^migration/$', views.migration, name=u"migration"),
 )

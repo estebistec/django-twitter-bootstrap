@@ -35,7 +35,7 @@ class ComponentsPageView(PageView):
     template_name = u"components.html"
     page_slug = u"components"
     page_title = u"Components"
-    page_lead = u"Dozens of reusable components built to provide iconography, dropdowns, navigation, alerts, popovers, and much more."
+    page_lead = u"Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more."
     page_nav = u'_includes/nav-components.html'
 
 
@@ -51,7 +51,7 @@ class CustomizePageView(PageView):
     template_name = u"customize.html"
     page_slug = u"customize"
     page_title = u"Customize and download"
-    page_lead = u"Customize Bootstrap's components, LESS variables, and jQuery plugins to get your very own version."
+    page_lead = u"Customize Bootstrap's components, Less variables, and jQuery plugins to get your very own version."
     page_nav = u'_includes/nav-customize.html'
 
 
@@ -75,8 +75,16 @@ class AboutPageView(PageView):
     template_name = u"about.html"
     page_slug = u"about"
     page_title = u"About"
-    page_lead = u"Learn about the history of Bootstrap, meet the core team, and check out the ever-growing community resources."
+    page_lead = u"Learn about the project's history, meet the maintaining teams, and find out how to use the Bootstrap brand."
     page_nav = u'_includes/nav-about.html'
+
+
+class MigrationPageView(PageView):
+    template_name = u"migration.html"
+    page_slug = u"migration"
+    page_title = u"Migrating to v3.x"
+    page_lead = u"Guidance on how to upgrade from Bootstrap v2.x to v3.x with emphasis on major changes, what's new, and what's been removed."
+    page_nav = u"_includes/nav-migration.html"
 
 
 home = HomePageView.as_view()
@@ -86,3 +94,4 @@ customize = CustomizePageView.as_view()
 getting_started = GettingStartedPageView.as_view()
 javascript = JavaScriptPageView.as_view()
 about = AboutPageView.as_view()
+migration = MigrationPageView.as_view()
