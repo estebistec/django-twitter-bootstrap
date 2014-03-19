@@ -10,8 +10,8 @@ from . import views
 
 
 urlpatterns = patterns('',
-    (r'^$', RedirectView.as_view(url=reverse_lazy(u"home"))),
-    url(r'^index/$', views.home, name=u"home"),
+    (r'^index/$', RedirectView.as_view(url=reverse_lazy(u"home"))),
+    url(r'^$', views.home, name=u"home"),
     url(r'^components/$', views.components, name=u"components"),
     url(r'^css/$', views.css, name=u"css"),
     url(r'^customize/$', views.customize, name=u"customize"),
