@@ -19,7 +19,7 @@ setup(
     # metadata for upload to PyPI
     author="Steven Cummings",
     author_email="cummingscs@gmail.com",
-    description="Provides a Django app whose static folder contains Twitter Bootstrap assets",
+    description="Provides a Django app whose static folder contains Bootstrap assets",
     license="MIT",
     keywords="django app staticfiles twitter bootstrap",
     url="https://github.com/estebistec/django-twitter-bootstrap",

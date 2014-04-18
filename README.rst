@@ -10,7 +10,7 @@ Overview
 ========
 
 This package provides a `Django <https://www.djangoproject.com>`_ app whose static folder contains
-the sources of `Twitter Bootstrap <http://getbootstrap.com>`_, nothing more and nothing
+the sources of `Bootstrap <http://getbootstrap.com>`_, nothing more and nothing
 less. The un-minified `LESS <http://lesscss.org>`_ and javascript sources are included to be
 integrated into your Django site as you see fit. If you simply want to use the minified CSS and JS
 files provided by the Bootstrap project, you probably don't need this anyway.
@@ -22,12 +22,12 @@ Further goals of this project include:
 - To provide versions that mirror Bootstrap releases going forward.
 - To provide a simple example project that demonstrates usage.
 
-And that's it! Twitter Bootstrap pre-packaged for Django.
+And that's it! Bootstrap pre-packaged for Django.
 
 I found that other similar projects:
 
 - Did not keep up with recent versions of Bootstrap.
-- Simply made a copy of the Bootstrap sources, messy and unecessary.
+- Simply made a copy of the Bootstrap sources, messy and unnecessary.
 - Tied the packaging to their own clever template tags or other Django components. You should have
   your choice of these things apart from this packaging.
 
@@ -121,7 +121,7 @@ filtering, concatenating, minification, and other processing of your static asse
 manager is `django-pipeline <https://github.com/cyberdelia/django-pipeline>`_.
 
 - Follow the setup instructions for django-pipeline
-- Define asset groups which provide Twitter Bootstrap
+- Define asset groups which provide Bootstrap
 - Use asset groups in your templates.
 
 Here are example pipeline settings::
@@ -195,7 +195,7 @@ available. This presents something of a problem if and when we need to make upda
 *packaging* here. We can't just upgrade any of the three common components of semantic versioning,
 because those map to versions of Bootstrap. So, we'll use revisions when needed.
 
-E.g., suppose we have django-twitter-bootstrap 2.2.2 which packages Twitter Bootstrap 2.2.2. If we
+E.g., suppose we have django-twitter-bootstrap 2.2.2 which packages Bootstrap 2.2.2. If we
 need to enhance or fix the packaging, we release it as revised version 2.2.2-1.
 
 Therefore, if you're getting a packaging for the first time you could specify it as a very tight
