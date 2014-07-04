@@ -124,7 +124,10 @@ manager is `django-pipeline <https://github.com/cyberdelia/django-pipeline>`_.
 - Define asset groups which provide Bootstrap
 - Use asset groups in your templates.
 
-Here are example pipeline settings::
+Configuration
+-------------
+
+Create asset groups including the bootstrap LESS and Javascript you want to include::
 
     # settings.py
 
@@ -166,7 +169,40 @@ Here are example pipeline settings::
 
 Of course you need to set up a
 `LESS compiler <http://django-pipeline.readthedocs.org/en/latest/compilers.html#less-compiler>`_
-for pipeline to use when processing the styles.
+for pipeline to use when processing the styles::
+
+    # settings.py
+
+    PIPELINE_COMPILERS = (
+        'pipeline.compilers.less.LessCompiler',
+    )
+
+Then, in the
+`PIPELINE_LESS_ARGUMENTS <http://django-pipeline.readthedocs.org/en/latest/compilers.html#pipeline-less-arguments>`_
+setting, supply an ``--include`` option which tells ``lessc`` where bootstrap LESS sources and any
+of your own live::
+
+    # settings.py
+
+    import os
+
+    # TODO update this to reflect where your settings live relative to the project root
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+    my_app_less = os.path.join(BASE_DIR, 'my_app', 'static', 'less')
+
+    # For apps outside of your project, it's simpler to import them to find their root folders
+    import twitter_bootstrap
+    bootstrap_less = os.path.join(os.path.dirname(twitter_bootstrap.__file__), 'static', 'less')
+
+    PIPELINE_LESS_ARGUMENTS = u'--include-path={}'.format(os.pathsep.join([bootstrap_less, my_app_less]))
+
+Please note that for any LESS sources outside of your project root, usually these are installed
+Django packages, it is simpler to import the package and determine the package root from the
+import module's ``__file__`` attribute.
+
+Template setup
+--------------
 
 A sample Django template using the assets::
 
