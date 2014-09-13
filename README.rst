@@ -20,7 +20,6 @@ Further goals of this project include:
 - To include Bootstrap as a git submodule, so as to include specific release tags and avoid the
   mess of managing a copy of Bootstrap.
 - To provide versions that mirror Bootstrap releases going forward.
-- To provide a simple example project that demonstrates usage.
 
 And that's it! Bootstrap pre-packaged for Django.
 
@@ -37,9 +36,6 @@ Setup
 **NOTE** The paths of the included bootstrap assets have now been namespaced within the app's
 ``static`` folder. The ``less`` and ``js`` folders now reside within a ``twitter_bootstrap``
 folder.
-
-A sample working project can be found
-`here <https://github.com/estebistec/django-twitter-bootstrap/tree/master/demo_site>`_.
 
 First, install the app::
 

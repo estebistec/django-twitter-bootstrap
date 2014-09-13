@@ -7,4 +7,4 @@ include setup.py
 include twitter_bootstrap/*.py
 include twitter_bootstrap/static/twitter_bootstrap/fonts/glyphicons-halflings-regular.*
 include twitter_bootstrap/static/twitter_bootstrap/js/*.js
-include twitter_bootstrap/static/twitter_bootstrap/less/*.less
+recursive-include twitter_bootstrap/static/twitter_bootstrap/less *.less
