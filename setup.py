@@ -13,6 +13,7 @@ setup(
             'static/twitter_bootstrap/fonts/glyphicons-halflings-regular.*',
             'static/twitter_bootstrap/js/*.js',
             'static/twitter_bootstrap/less/*.less',
+            'static/twitter_bootstrap/less/mixins/*.less',
         ],
     },
 
