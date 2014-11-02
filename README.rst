@@ -39,7 +39,7 @@ folder.
 
 First, install the app::
 
-    pip install django-twitter-bootstrap==3.2.0
+    pip install django-twitter-bootstrap==3.3.0
 
 Then include it in your Django project::
 
