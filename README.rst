@@ -1,9 +1,9 @@
-.. image:: https://pypip.in/v/django-twitter-bootstrap/badge.png
-    :target: https://pypi.python.org/pypi/django-twitter-bootstrap/
+.. image:: https://pypip.in/v/django-bootstrap-less/badge.png
+    :target: https://pypi.python.org/pypi/django-bootstrap-less/
     :alt: Latest Version
 
-.. image:: https://pypip.in/d/django-twitter-bootstrap/badge.png
-    :target: https://pypi.python.org/pypi/django-twitter-bootstrap/
+.. image:: https://pypip.in/d/django-bootstrap-less/badge.png
+    :target: https://pypi.python.org/pypi/django-bootstrap-less/
     :alt: Downloads
 
 Overview
@@ -34,12 +34,12 @@ Setup
 =====
 
 **NOTE** The paths of the included bootstrap assets have now been namespaced within the app's
-``static`` folder. The ``less`` and ``js`` folders now reside within a ``twitter_bootstrap``
+``static`` folder. The ``less`` and ``js`` folders now reside within a ``bootstrap_less``
 folder.
 
 First, install the app::
 
-    pip install django-twitter-bootstrap==3.3.0
+    pip install django-bootstrap-less==3.3.0
 
 Then include it in your Django project::
 
@@ -47,7 +47,7 @@ Then include it in your Django project::
 
     INSTALLED_APPS = (
         ...
-        'twitter_bootstrap',
+        'bootstrap_less',
         ...
     )
 
@@ -65,15 +65,15 @@ glyphicons
 These don't need to be specified or configured in your project, but they are included all the
 same.
 
-- ``twitter_bootstrap/fonts/glyphicons-halflings-regular.eot``
-- ``twitter_bootstrap/fonts/glyphicons-halflings-regular.svg``
-- ``twitter_bootstrap/fonts/glyphicons-halflings-regular.ttf``
-- ``twitter_bootstrap/fonts/glyphicons-halflings-regular.woff``
+- ``bootstrap_less/fonts/glyphicons-halflings-regular.eot``
+- ``bootstrap_less/fonts/glyphicons-halflings-regular.svg``
+- ``bootstrap_less/fonts/glyphicons-halflings-regular.ttf``
+- ``bootstrap_less/fonts/glyphicons-halflings-regular.woff``
 
 LESS
 ----
 
-- ``twitter_bootstrap/less/bootstrap.less``
+- ``bootstrap_less/less/bootstrap.less``
 
 Also included are lots of other LESS files included by the above that aren't worth listing out.
 The above file is the common entry point for usage of Bootstrap styles.
@@ -86,18 +86,18 @@ that you may or may not want to include in your site. These files are
 typically hand-picked based on the needs of your site. Please check the
 Bootstrap documentation for info on which of these modules depends on others.
 
-- ``twitter_bootstrap/js/transition.js``
-- ``twitter_bootstrap/js/modal.js``
-- ``twitter_bootstrap/js/dropdown.js``
-- ``twitter_bootstrap/js/scrollspy.js``
-- ``twitter_bootstrap/js/tab.js``
-- ``twitter_bootstrap/js/tooltip.js``
-- ``twitter_bootstrap/js/popover.js``
-- ``twitter_bootstrap/js/alert.js``
-- ``twitter_bootstrap/js/button.js``
-- ``twitter_bootstrap/js/collapse.js``
-- ``twitter_bootstrap/js/carousel.js``
-- ``twitter_bootstrap/js/affix.js``
+- ``bootstrap_less/js/transition.js``
+- ``bootstrap_less/js/modal.js``
+- ``bootstrap_less/js/dropdown.js``
+- ``bootstrap_less/js/scrollspy.js``
+- ``bootstrap_less/js/tab.js``
+- ``bootstrap_less/js/tooltip.js``
+- ``bootstrap_less/js/popover.js``
+- ``bootstrap_less/js/alert.js``
+- ``bootstrap_less/js/button.js``
+- ``bootstrap_less/js/collapse.js``
+- ``bootstrap_less/js/carousel.js``
+- ``bootstrap_less/js/affix.js``
 
 Plain Usage
 ===========
@@ -106,7 +106,7 @@ If you're not using an asset manager, you can just include them as usual in your
 
     {% load staticfiles %}
     ...
-    <script type="text/javascript" src="{% static 'twitter_bootstrap/js/transition.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap_less/js/transition.js' %}"></script>
     ...
 
 Usage with an asset pipeline
@@ -131,7 +131,7 @@ Create asset groups including the bootstrap LESS and Javascript you want to incl
         ...
         'bootstrap': {
             'source_filenames': (
-                'twitter_bootstrap/less/bootstrap.less',
+                'bootstrap_less/less/bootstrap.less',
             ),
             'output_filename': 'css/b.css',
             'extra_context': {
@@ -145,18 +145,18 @@ Create asset groups including the bootstrap LESS and Javascript you want to incl
         ...
         'bootstrap': {
             'source_filenames': (
-              'twitter_bootstrap/js/transition.js',
-              'twitter_bootstrap/js/modal.js',
-              'twitter_bootstrap/js/dropdown.js',
-              'twitter_bootstrap/js/scrollspy.js',
-              'twitter_bootstrap/js/tab.js',
-              'twitter_bootstrap/js/tooltip.js',
-              'twitter_bootstrap/js/popover.js',
-              'twitter_bootstrap/js/alert.js',
-              'twitter_bootstrap/js/button.js',
-              'twitter_bootstrap/js/collapse.js',
-              'twitter_bootstrap/js/carousel.js',
-              'twitter_bootstrap/js/affix.js',
+              'bootstrap_less/js/transition.js',
+              'bootstrap_less/js/modal.js',
+              'bootstrap_less/js/dropdown.js',
+              'bootstrap_less/js/scrollspy.js',
+              'bootstrap_less/js/tab.js',
+              'bootstrap_less/js/tooltip.js',
+              'bootstrap_less/js/popover.js',
+              'bootstrap_less/js/alert.js',
+              'bootstrap_less/js/button.js',
+              'bootstrap_less/js/collapse.js',
+              'bootstrap_less/js/carousel.js',
+              'bootstrap_less/js/affix.js',
             ),
             'output_filename': 'js/b.js',
         },
@@ -188,8 +188,8 @@ of your own live::
     my_app_less = os.path.join(BASE_DIR, 'my_app', 'static', 'less')
 
     # For apps outside of your project, it's simpler to import them to find their root folders
-    import twitter_bootstrap
-    bootstrap_less = os.path.join(os.path.dirname(twitter_bootstrap.__file__), 'static', 'less')
+    import bootstrap_less
+    bootstrap_less = os.path.join(os.path.dirname(bootstrap_less.__file__), 'static', 'less')
 
     PIPELINE_LESS_ARGUMENTS = u'--include-path={}'.format(os.pathsep.join([bootstrap_less, my_app_less]))
 
@@ -227,7 +227,7 @@ available. This presents something of a problem if and when we need to make upda
 *packaging* here. We can't just upgrade any of the three common components of semantic versioning,
 because those map to versions of Bootstrap. So, we'll use revisions when needed.
 
-E.g., suppose we have django-twitter-bootstrap 3.2.0 which packages Bootstrap 3.2.0. If we
+E.g., suppose we have django-bootstrap-less 3.2.0 which packages Bootstrap 3.2.0. If we
 need to enhance or fix the packaging, we release it as revised version 3.2.0-1.
 
 Therefore, if you're getting a packaging for the first time you could specify it as a very tight

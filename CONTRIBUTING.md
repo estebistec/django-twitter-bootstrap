@@ -1,6 +1,6 @@
 ## Contributing
 
-django-twitter-bootstrap is an MIT-licensed, open-source project and welcomes
+django-bootstrap-less is an MIT-licensed, open-source project and welcomes
 contributions.
 
 This being a relatively simple project, contributions would likely take one of
@@ -24,18 +24,18 @@ Bootstrap and go.
 When you first clone the project:
 
 ```bash
-git clone git://github.com/estebistec/django-twitter-bootstrap.git
-cd django-twitter-bootstrap
+git clone git://github.com/estebistec/django-bootstrap-less.git
+cd django-bootstrap-less
 git submodule update --init
 ```
 
 Then, when you want to update to a different release of Bootstrap:
 
 ```bash
-cd twitter_bootstrap/static/twitter_bootstrap
+cd bootstrap_less/static/bootstrap_less
 git tag  # See a list of tags
 git checkout v3.0.4  # Or some other release tag
 cd ../../..
-git add twitter_bootstrap/static/twitter_bootstrap
+git add bootstrap_less/static/bootstrap_less
 git commit -m "Upgrade Bootstrap to v3.0.4"
 ```

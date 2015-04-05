@@ -5,15 +5,15 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name="django-twitter-bootstrap",
+    name="django-bootstrap-less",
     version="3.3.0",
     packages=find_packages(),
     package_data={
-        'twitter_bootstrap': [
-            'static/twitter_bootstrap/fonts/glyphicons-halflings-regular.*',
-            'static/twitter_bootstrap/js/*.js',
-            'static/twitter_bootstrap/less/*.less',
-            'static/twitter_bootstrap/less/mixins/*.less',
+        'bootstrap_less': [
+            'static/bootstrap_less/fonts/glyphicons-halflings-regular.*',
+            'static/bootstrap_less/js/*.js',
+            'static/bootstrap_less/less/*.less',
+            'static/bootstrap_less/less/mixins/*.less',
         ],
     },
 
@@ -22,9 +22,9 @@ setup(
     author_email="cummingscs@gmail.com",
     description="Provides a Django app whose static folder contains Bootstrap assets",
     license="MIT",
-    keywords="django app staticfiles twitter bootstrap",
-    url="https://github.com/estebistec/django-twitter-bootstrap",
-    download_url="http://pypi.python.org/pypi/django-twitter-bootstrap",
+    keywords="django app staticfiles bootstrap",
+    url="https://github.com/estebistec/django-bootstrap-less",
+    download_url="http://pypi.python.org/pypi/django-bootstrap-less",
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',

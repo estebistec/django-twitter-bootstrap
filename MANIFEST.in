@@ -4,7 +4,7 @@ include PLAN
 include *.md
 include *.rst
 include setup.py
-include twitter_bootstrap/*.py
-include twitter_bootstrap/static/twitter_bootstrap/fonts/glyphicons-halflings-regular.*
-include twitter_bootstrap/static/twitter_bootstrap/js/*.js
-recursive-include twitter_bootstrap/static/twitter_bootstrap/less *.less
+include bootstrap_less/*.py
+include bootstrap_less/static/bootstrap_less/fonts/glyphicons-halflings-regular.*
+include bootstrap_less/static/bootstrap_less/js/*.js
+recursive-include bootstrap_less/static/bootstrap_less/less *.less
