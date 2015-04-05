@@ -1,6 +1,3 @@
-[submodule "twitter_bootstrap/static"]
-	path = twitter_bootstrap/static
-	url = git://github.com/twitter/bootstrap.git
-[submodule "twitter_bootstrap/static/twitter_bootstrap"]
-	path = twitter_bootstrap/static/bootstrap_less
+[submodule "bootstrap_less/static/bootstrap_less"]
+	path = bootstrap_less/static/bootstrap_less
 	url = git@github.com:twbs/bootstrap.git
